@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    /* top: 0; */
+    /* border: 1px solid black; */
+    background-color: #113448;
+}
+.logo-img{
+    text-align: left;
+    flex-grow: 1;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: aqua; */
+}
+.links{
+    /* background-color: gray; */
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    flex-grow: 1;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: "Open Sans", sans-serif;
+}
+.menu-bars{
+    display: none;
+    padding: 20px;
+}
+@media(max-width :880px){
+    .links{
+        display: none;
+    }
+    .menu-bars{
+        display: block;
+    }
+}
+.hexa-nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* background-color: red; */
+    padding-left: 10px;
+    padding-right: 30px;
+}
+#hexa1-inside{
+    margin-left: -37px;   
+}
+#hexa2-inside{
+    margin-left: -37px;   
+}
+ul li:hover{
+    color: #14bf98;
+}
+ul li:first-child{
+    color: #14bf98;
+}
+.menu-bars{
+    display: none;
+    padding-top: 20px;
+    background-color: #14bf98;
+}
+/* Responsive nature of menu bar */
+@media(max-width :900px){
+    .links,.hexa-nav{
+        display: none;
+    }
+    .menu-bars{
+        display: block;
+        color: #fff;
+    }
+}
+main{
+    display: flex;
+    /* border: 2px solid black; */
+    margin-top: 55px;
+    position: absolute;
+}
+main img{
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+main h1{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 4vw;
+}
+.home-detail{
+    position: absolute;
+    width: 59%;
+    left: 20%;
+    top: 50%;
+    font-size: 2vw;
+    /* background-color: #14bf98; */
+    text-align: center;
+    color: #dfe5ec;
+}
+/* .detail-btn{
+    display: flex;
+} */
+main button{
+    position: absolute;
+    background-color: beige;
+    font-size: 1.5vw;
+    background-color: #14bf98;
+    height: 7%;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 45%;
+    top: 60%;
+    color: #fff;
+    font-weight: 700;
+    min-height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+main button :hover{
+    color: #14bf98;
+    background-color: transparent;
+    border: 2px solid #14bf98;
+}
